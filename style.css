@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: MsMincho;
+    src: url(fonts/MSMINCHO.TTF)
+}
+
+body {
+    background-color: green;
+    font-family: MsMincho;
+    color: black;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.header-box {
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreboard {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 20px;
+    gap: 20px;
+}
+
+.scoreRound, .scorePlayer, .scoreComputer, .scoreDraws {
+    border: 2px solid black;
+    padding: 4px;
+    color: lightgreen;
+}
+
+.result {
+    visibility: hidden;
+}
+
+#resultText {
+    font-size: 2rem; 
+}
+
+.selections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.selection0, .selection1 {
+    width: 50%;
+}
+
+.header {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: lightgreen
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.compImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#compImage {
+    visibility: hidden;
+}
+
+.gameOptions {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#rock, #paper, #scissor {
+    cursor: pointer;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: greenyellow;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+button:hover {opacity: 0.6;}
