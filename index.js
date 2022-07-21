@@ -144,15 +144,13 @@ function game() {
     updateScore();
     checkWinner();
 }
-    
-game();
 
-/*startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {
     game();
     compImage.style.visibility = "hidden";
     result.style.visibility = "hidden";
 }, {once: true});
-*/
+
 resetBtn.addEventListener("click", () => {
     roundNum = 0;
     playerScoreNum = 0;
